@@ -18,6 +18,10 @@ public class Stack {
 	public int tamanioStack(){
 		return tamanio;
 	}
+
+	public int pop() {
+		return 1;
+	}
 	
 
 }

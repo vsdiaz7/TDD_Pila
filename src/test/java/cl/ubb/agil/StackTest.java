@@ -37,4 +37,11 @@ public class StackTest {
 		int resultado= stack.tamanioStack();
 		assertThat(2, is(resultado));
 	}
+	@Test
+	public void AgregaNumero1retorna1(){
+		Stack stack= new Stack();
+		stack.agregarStack(1);
+		int resultado= stack.pop();
+		assertThat(1, is(resultado));
+	}
 }
