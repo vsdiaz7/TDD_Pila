@@ -11,9 +11,13 @@ public class Stack {
 		return false;
 	}
 
-	public void agregarStack(int i) {
-		tamanio++;
-		
+	public int agregarStack(int i) {
+		return tamanio++;
 	}
+	
+	public int tamanioStack(){
+		return tamanio;
+	}
+	
 
 }

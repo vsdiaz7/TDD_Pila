@@ -2,6 +2,8 @@ package cl.ubb.agil;
 
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
+
 import org.junit.Test;
 
 public class StackTest {
@@ -26,5 +28,13 @@ public class StackTest {
 		stack.agregarStack(2);
 		boolean resultado= stack.estaVacia();
 		assertThat(resultado, equalTo(false));
+	}
+	@Test
+	public void AgregaNumero1y2retorna2(){
+		Stack stack= new Stack();
+		stack.agregarStack(1);
+		stack.agregarStack(2);
+		int resultado= stack.tamanioStack();
+		assertThat(2, is(resultado));
 	}
 }
