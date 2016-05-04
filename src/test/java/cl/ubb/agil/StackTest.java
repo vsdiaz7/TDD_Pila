@@ -19,4 +19,12 @@ public class StackTest {
 		boolean resultado= stack.estaVacia();
 		assertThat(resultado, equalTo(false));
 	}
+	@Test
+	public void AgregaNumero1y2StackNoVacio(){
+		Stack stack= new Stack();
+		stack.agregarStack(1);
+		stack.agregarStack(2);
+		boolean resultado= stack.estaVacia();
+		assertThat(resultado, equalTo(false));
+	}
 }
