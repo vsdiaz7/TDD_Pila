@@ -38,10 +38,18 @@ public class StackTest {
 		assertThat(2, is(resultado));
 	}
 	@Test
-	public void AgregaNumero1retorna1(){
+	public void AgregaNumero1retornaNumero1(){
 		Stack stack= new Stack();
 		stack.agregarStack(1);
 		int resultado= stack.pop();
 		assertThat(1, is(resultado));
+	}
+	@Test
+	public void AgregaNumero1y2retornaNumero2(){
+		Stack stack= new Stack();
+		stack.agregarStack(1);
+		stack.agregarStack(2);
+		int resultado= stack.pop();
+		assertThat(2, is(resultado));
 	}
 }
